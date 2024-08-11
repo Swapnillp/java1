@@ -1,5 +1,8 @@
 //Login form
 import javax.swing.*;
+
+import java.awt.Color;
+import java.awt.Font;
 import java.awt.event.*;
 
     class Logins1 extends JFrame{
@@ -16,6 +19,7 @@ import java.awt.event.*;
         }
         void setComponents(){
             l1=new JLabel("Welcome to Login screen...");
+            l1.setForeground(Color.DARK_GRAY);
             l2=new JLabel("USERNAME");
             l3=new JLabel("PASSWORD");
             l4=new JLabel();
@@ -23,6 +27,8 @@ import java.awt.event.*;
             t2=new JPasswordField();
             b1=new JButton("Login");
             b2=new JButton("Clear");
+            b1.setBackground(Color.BLUE);
+            b2.setBackground(Color.red);
             setLayout(null);
             setVisible(true);
             setSize(700,700);
