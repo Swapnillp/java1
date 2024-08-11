@@ -18,7 +18,9 @@ import java.awt.event.*;
 
         }
         void setComponents(){
+            Font f1=new Font("Times New Romen",Font.BOLD,20);
             l1=new JLabel("Welcome to Login screen...");
+            l1.setFont(f1);
             l1.setForeground(Color.DARK_GRAY);
             l2=new JLabel("USERNAME");
             l3=new JLabel("PASSWORD");
