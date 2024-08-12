@@ -67,8 +67,10 @@ import java.awt.event.*;
                 String s1=t1.getText();
                 String s2 = new String(t2.getPassword());
                 if(s1.equals("admin")&&s2.equals("admin")){
+                    JOptionPane.showMessageDialog(null,"Login succesful");
                     l4.setText("Login succesful :");
                 }else{
+                    JOptionPane.showMessageDialog(null,"Login unsuccesful");
                     l4.setText("Login unsuccesful :");
                 }
             }      
