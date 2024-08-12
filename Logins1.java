@@ -45,6 +45,9 @@ import java.awt.event.*;
             add(b2);
             b1.addActionListener(new log());
             b2.addActionListener(new Clear());
+            b1.addMouseListener(new MouseL());
+            b2.addMouseListener(new MouseL());
+
             l1.setBounds(100,50,300,30);
             l2.setBounds(100,200,100,30);
             l3.setBounds(100,350,100,30);
@@ -80,6 +83,23 @@ import java.awt.event.*;
             public void  actionPerformed(ActionEvent e1){
                 t1.setText(null);
                 t2.setText(null);
+            }
+        }
+        class MouseL implements MouseListener{
+            public void mouseExited(MouseEvent e1){
+                b1.setBackground(Color.BLUE);
+            }
+            public void mouseReleased(MouseEvent e1){
+                b1.setBackground(new Color(3, 59, 90));
+            }
+            public void mouseClicked(MouseEvent e1) {
+                b1.setBackground(new Color(3, 59, 90).brighter());
+            }   
+            public void  mousePressed(MouseEvent e1){
+                b1.setBackground(Color.GREEN);;
+            }
+            public void mouseEntered(MouseEvent e1){
+                b1.setBackground(new Color(3, 59, 90).brighter());
             }
         }
     
