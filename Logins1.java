@@ -47,6 +47,8 @@ import java.awt.event.*;
             b2.addActionListener(new Clear());
             b1.addMouseListener(new MouseL());
             b2.addMouseListener(new MouseL());
+            b1.setForeground(Color.white);
+            b2.setForeground(Color.white);
 
             l1.setBounds(100,50,300,30);
             l2.setBounds(100,200,100,30);
